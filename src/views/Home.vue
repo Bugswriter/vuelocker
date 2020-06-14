@@ -19,7 +19,7 @@
     </b-list-group-item>
   </b-list-group>
   <footer class="m-3">
-    - made with 💖 by <b-link href="https://github.com/bugswriter">@bugswriter</b-link>
+    - made with :sparkling-heart: by <b-link href="https://github.com/bugswriter">@bugswriter</b-link>
   </footer>
 </div>
 </template>
