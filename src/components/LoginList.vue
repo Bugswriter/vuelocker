@@ -4,7 +4,9 @@
   <hr>
   <b-col>    
     <b-card v-for="login in logins" :key="login.id" no-body class="mb-4">
-      <b-card :header="login.website" v-b-toggle="'accordion-'+login.id" no-body class="p-0" role="tab">
+      <b-card-header  border-variant="info" v-b-toggle="'accordion-'+login.id" no-body class="p-3" role="tab">
+        <b-img :src="'https://www.google.com/s2/favicons?domain='+login.website" class="mr-2"></b-img>{{ login.website }}
+      </b-card-header>
       <b-collapse :id="'accordion-'+login.id" accordion="my-accordion" role="tabpanel">
         <b-card-body>
           <b-card-text class="float-right">
@@ -29,9 +31,7 @@
           </b-card-text>
         </b-card-body>
       </b-collapse>
-      </b-card>            
     </b-card>
-
   </b-col>
 
 </div>
